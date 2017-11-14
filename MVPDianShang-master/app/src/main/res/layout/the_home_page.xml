@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_rb01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/home_page_select"
+            android:button="@null"
+            android:checked="true"
+            android:padding="5dp" />
+
+        <RadioButton
+            android:id="@+id/radio_rb02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/classification_select"
+            android:button="@null"
+            android:padding="5dp" />
+
+        <RadioButton
+            android:id="@+id/radio_rb03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/found_select"
+            android:button="@null"
+            android:padding="5dp" />
+
+        <RadioButton
+            android:id="@+id/radio_rb04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shopping_cart_select"
+            android:button="@null"
+            android:padding="5dp" />
+
+        <RadioButton
+            android:id="@+id/radio_rb05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/the_my_select"
+            android:button="@null"
+            android:padding="5dp" />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

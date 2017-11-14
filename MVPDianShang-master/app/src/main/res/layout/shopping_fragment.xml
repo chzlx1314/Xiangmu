@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    //标题栏
+<View
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:background="@color/view"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/view"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/gwc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/dingwei"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/gwc_title"
+            android:src="@drawable/dingwei" />
+
+        <ImageView
+            android:id="@+id/gwc_msg"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/msg" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/gwc_msg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#6b6868" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#767474" />
+
+    <TextView
+        android:id="@+id/notdata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="空空如也,快去购物吧"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <!--影藏箭头  android:groupIndicator="@null"-->
+
+
+    <ExpandableListView
+        android:id="@+id/gwc_ex_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:groupIndicator="@null"
+        android:dividerHeight="0.5dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bdbaba" />
+    //结算栏
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <CheckBox
+            android:id="@+id/checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_style"
+            android:drawablePadding="5dp"
+            android:text="全选"
+            android:textColor="#6b6868"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/checkAll"
+            android:gravity="center"
+            android:text="合计:￥0.00"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ff0000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#ff0000"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:text="去结算"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/checked_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#ff0000"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="(0)"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
